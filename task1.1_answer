@@ -464,7 +464,9 @@ Date:   Sat Sep 2 23:23:58 2017 +0400
 
 ==================== 12 ====================
 
-
+misha@vbox-altair:~/first_repo$ git checkout -b feature1
+Переключено на новую ветку «feature1»
+misha@vbox-altair:~/first_repo$ echo 'btbyyujui78' >> fileB
 
 ==================== 13 ====================
 
