@@ -63,11 +63,80 @@ To git@github.com:mixan96/central_repo.git
 
 ==================== 6 ====================
 
-
+misha@vbox-altair:~/first_repo$ cd ../
+misha@vbox-altair:~$ git clone first_repo second_repo
+Клонирование в «second_repo»…
+готово.
+misha@vbox-altair:~$ cd second_repo/
 
 ==================== 7 ====================
 
+misha@vbox-altair:~/second_repo$ echo '12vrvthr54g5' > fileA
+misha@vbox-altair:~/second_repo$ echo 'bn5btyhdfhfd' > fileB
+misha@vbox-altair:~/second_repo$ git status
+На ветке master
+Ваша ветка обновлена в соответствии с «origin/master».
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
 
+	изменено:      task1.1_answer
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+
+	fileA
+	fileB
+
+нет изменений добавленных для коммита
+(используйте «git add» и/или «git commit -a»)
+misha@vbox-altair:~/second_repo$ git remote add gh git@github.com:mixan96/central_repo.git
+misha@vbox-altair:~/second_repo$ git add fileA fileB
+misha@vbox-altair:~/second_repo$ git commit
+[master d619ddb] Задание 7. Файлы fileA fileB
+ 2 files changed, 2 insertions(+)
+ create mode 100644 fileA
+ create mode 100644 fileB
+misha@vbox-altair:~/second_repo$ git push -u gh master
+Подсчет объектов: 4, готово.
+Delta compression using up to 2 threads.
+Сжатие объектов: 100% (2/2), готово.
+Запись объектов: 100% (4/4), 419 bytes | 0 bytes/s, готово.
+Total 4 (delta 0), reused 0 (delta 0)
+To git@github.com:mixan96/central_repo.git
+   b168a8b..d619ddb  master -> master
+Ветка master отслеживает внешнюю ветку master из gh.
+
+misha@vbox-altair:~/second_repo$ cd ../first_repo/
+misha@vbox-altair:~/first_repo$ git pull origin master 
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 0), reused 4 (delta 0), pack-reused 0
+Распаковка объектов: 100% (4/4), готово.
+Из github.com:mixan96/central_repo
+ * branch            master     -> FETCH_HEAD
+   b168a8b..d619ddb  master     -> origin/master
+Обновление b168a8b..d619ddb
+Fast-forward
+ fileA | 1 +
+ fileB | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 fileA
+ create mode 100644 fileB
+
+misha@vbox-altair:~/second_repo$ git status
+На ветке master
+Ваша ветка обновлена в соответствии с «gh/master».
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>…», чтобы добавить файл в индекс)
+  (используйте «git checkout -- <файл>…», чтобы отменить изменения
+   в рабочем каталоге)
+
+	изменено:      task1.1_answer
+
+нет изменений добавленных для коммита
+(используйте «git add» и/или «git commit -a»)
 
 ==================== 8 ====================
 
