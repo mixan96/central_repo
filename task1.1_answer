@@ -467,6 +467,18 @@ Date:   Sat Sep 2 23:23:58 2017 +0400
 misha@vbox-altair:~/first_repo$ git checkout -b feature1
 Переключено на новую ветку «feature1»
 misha@vbox-altair:~/first_repo$ echo 'btbyyujui78' >> fileB
+misha@vbox-altair:~/first_repo$ git commit -a
+[feature1 d5160bb] Задание 12
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+misha@vbox-altair:~/first_repo$ git push origin feature1 
+Подсчет объектов: 4, готово.
+Delta compression using up to 2 threads.
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (4/4), 548 bytes | 0 bytes/s, готово.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To git@github.com:mixan96/central_repo.git
+ * [new branch]      feature1 -> feature1
 
 ==================== 13 ====================
 
