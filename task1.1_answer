@@ -45,7 +45,21 @@ misha@vbox-altair:~/first_repo$ git status
 
 ==================== 5 ====================
 
-
+misha@vbox-altair:~/first_repo$ git add .gitignore task1.1_answer 
+misha@vbox-altair:~/first_repo$ git commit 
+[master (корневой коммит) 0e071ff] Задания 1-4
+ 2 files changed, 103 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 task1.1_answer
+misha@vbox-altair:~/first_repo$ git push -u origin master
+Подсчет объектов: 4, готово.
+Delta compression using up to 2 threads.
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (4/4), 882 bytes | 0 bytes/s, готово.
+Total 4 (delta 0), reused 0 (delta 0)
+To git@github.com:mixan96/central_repo.git
+ * [new branch]      master -> master
+Ветка master отслеживает внешнюю ветку master из origin.
 
 ==================== 6 ====================
 
