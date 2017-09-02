@@ -227,6 +227,57 @@ Author: Нуйкин Михаил <m.nuikin@reg.ru>
 Date:   Sat Sep 2 23:23:58 2017 +0400
 
     Задания 1-4
+    
+--------------------------------------------
+
+misha@vbox-altair:~/second_repo$ git commit -a
+[master 31f6da0] Логи для задания 9
+ 1 file changed, 60 insertions(+)
+misha@vbox-altair:~/second_repo$ git push gh master
+To git@github.com:mixan96/central_repo.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: не удалось отправить некоторые ссылки в «git@github.com:mixan96/central_repo.git»
+подсказка: Обновления были отклонены, так как верхушка вашей текущей ветки
+подсказка: позади ее внешней части. Заберите и слейте внешние изменения 
+подсказка: (например, с помощью «git pull …») перед повторной попыткой отправки
+подсказка: изменений.
+подсказка: Для дополнительной информации смотрите «Note about fast-forwards»
+подсказка: в «git push --help».
+misha@vbox-altair:~/second_repo$ git pull gh master
+Из github.com:mixan96/central_repo
+ * branch            master     -> FETCH_HEAD
+Автослияние task1.1_answer
+Удаление fileB
+Merge made by the 'recursive' strategy.
+ fileA          |  1 +
+ fileB          |  1 -
+ task1.1_answer | 24 +++++++++++++++++++++++-
+ 3 files changed, 24 insertions(+), 2 deletions(-)
+ delete mode 100644 fileB
+misha@vbox-altair:~/second_repo$ git push gh master
+Подсчет объектов: 9, готово.
+Delta compression using up to 2 threads.
+Сжатие объектов: 100% (9/9), готово.
+Запись объектов: 100% (9/9), 2.86 KiB | 0 bytes/s, готово.
+Total 9 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+To git@github.com:mixan96/central_repo.git
+   a2f2811..3800e41  master -> master
+
+-------------------------------------------
+
+misha@vbox-altair:~/first_repo$ git pull origin master
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 9 (delta 5), reused 9 (delta 5), pack-reused 0
+Распаковка объектов: 100% (9/9), готово.
+Из github.com:mixan96/central_repo
+ * branch            master     -> FETCH_HEAD
+   a2f2811..3800e41  master     -> origin/master
+Обновление a2f2811..3800e41
+Fast-forward
+ task1.1_answer | 131 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 130 insertions(+), 1 deletion(-)
 
 ==================== 10 ====================
 
