@@ -71,7 +71,16 @@ To git@github.com:mixan96/central_repo.git
 
 ==================== 8 ====================
 
-
+misha@vbox-altair:~/first_repo$ echo 'abvbntyh' >> fileA
+misha@vbox-altair:~/first_repo$ git diff fileA
+diff --git a/fileA b/fileA
+index 6f486c3..d713ec7 100644
+--- a/fileA
++++ b/fileA
+@@ -1 +1,2 @@
+ 12vrvthr54g5
++abvbntyh
+misha@vbox-altair:~/first_repo$ rm fileB
 
 ==================== 9 ====================
 
