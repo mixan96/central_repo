@@ -741,3 +741,19 @@ To git@github.com:mixan96/central_repo.git
 misha@vbox-altair:~/first_repo$ 
 
 ==================== 19 ====================
+
+misha@vbox-altair:~/second_repo$ git checkout master 
+Переключено на ветку «master»
+Ваша ветка обновлена в соответствии с «gh/master».
+misha@vbox-altair:~/second_repo$ git pull gh master
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 15 (delta 10), reused 13 (delta 8), pack-reused 0
+Распаковка объектов: 100% (15/15), готово.
+Из github.com:mixan96/central_repo
+ * branch            master     -> FETCH_HEAD
+   edb8207..252c4d7  master     -> gh/master
+Обновление edb8207..252c4d7
+Fast-forward
+ task1.1_answer | 209 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 206 insertions(+), 3 deletions(-)
