@@ -482,11 +482,32 @@ To git@github.com:mixan96/central_repo.git
 
 ==================== 13 ====================
 
-
+misha@vbox-altair:~/second_repo$ git checkout -b feature2
 
 ==================== 14 ====================
 
-
+misha@vbox-altair:~/second_repo$ git checkout master 
+Переключено на ветку «master»
+Ваша ветка обновлена в соответствии с «gh/master».
+misha@vbox-altair:~/second_repo$ git fetch gh
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7 (delta 3), reused 6 (delta 2), pack-reused 0
+Распаковка объектов: 100% (7/7), готово.
+Из github.com:mixan96/central_repo
+ * [новая ветка]     feature1   -> gh/feature1
+misha@vbox-altair:~/second_repo$ git checkout -b feature1 gh/feature1
+Ветка feature1 отслеживает внешнюю ветку feature1 из gh.
+Переключено на новую ветку «feature1»
+misha@vbox-altair:~/second_repo$ git checkout master 
+Переключено на ветку «master»
+Ваша ветка обновлена в соответствии с «gh/master».
+misha@vbox-altair:~/second_repo$ git merge feature1
+Обновление ddac55f..bd435f1
+Fast-forward
+ fileB          |  1 +
+ task1.1_answer | 16 +++++++++++++++-
+ 2 files changed, 16 insertions(+), 1 deletion(-)
 
 ==================== 15 ====================
 
