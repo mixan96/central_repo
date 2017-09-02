@@ -476,7 +476,16 @@ Date:   Sat Sep 2 23:23:58 2017 +0400
 
 ==================== 15 ====================
 
-
+isha@vbox-altair:~/second_repo$ git checkout feature2
+Переключено на ветку «feature2»
+misha@vbox-altair:~/second_repo$ git branch -a
+  feature1
+* feature2
+  master
+  remotes/gh/feature1
+  remotes/gh/master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
 
 ==================== 16 ====================
 
