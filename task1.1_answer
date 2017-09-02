@@ -144,7 +144,67 @@ misha@vbox-altair:~/second_repo$ git status
 
 ==================== 9 ====================
 
+misha@vbox-altair:~/second_repo$ git commit -a
+[master a8fb860] Задание 9
+ 1 file changed, 70 insertions(+), 1 deletion(-)
 
+-------------------------------------------
+
+misha@vbox-altair:~/first_repo$ git log
+commit a2f281163e35d8a98d3bcbf4ed44e137fef23ec5
+Author: Нуйкин Михаил <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:33:45 2017 +0400
+
+    Дополнение для задания 8
+
+commit 5b441ec46f93dadb8dd3043ba236fd792a57e561
+Author: Нуйкин Михаил <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:32:56 2017 +0400
+
+    Задание 8
+
+commit d619ddb2a40d21d746b68da56f250b487a9b9e7f
+Author: Михаил Нуйкин <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:29:15 2017 +0400
+
+    Задание 7. Файлы fileA fileB
+
+commit b168a8bb5484870d886a570c5f4f609940a77837
+Author: Нуйкин Михаил <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:24:57 2017 +0400
+
+    Задание 5
+
+commit 0e071ff782079783eeb78159b74d08b159ac3f04
+Author: Нуйкин Михаил <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:23:58 2017 +0400
+
+    Задания 1-4
+-------------------------------------------
+misha@vbox-altair:~/second_repo$ git log
+commit a8fb8605e69ce48b1471adc7b64f914ef3b3e9cf
+Author: Михаил Нуйкин <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:34:28 2017 +0400
+
+    Задание 9
+
+commit d619ddb2a40d21d746b68da56f250b487a9b9e7f
+Author: Михаил Нуйкин <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:29:15 2017 +0400
+
+    Задание 7. Файлы fileA fileB
+
+commit b168a8bb5484870d886a570c5f4f609940a77837
+Author: Нуйкин Михаил <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:24:57 2017 +0400
+
+    Задание 5
+
+commit 0e071ff782079783eeb78159b74d08b159ac3f04
+Author: Нуйкин Михаил <m.nuikin@reg.ru>
+Date:   Sat Sep 2 23:23:58 2017 +0400
+
+    Задания 1-4
 
 ==================== 10 ====================
 
