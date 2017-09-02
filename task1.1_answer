@@ -508,6 +508,18 @@ Fast-forward
  fileB          |  1 +
  task1.1_answer | 16 +++++++++++++++-
  2 files changed, 16 insertions(+), 1 deletion(-)
+misha@vbox-altair:~/second_repo$ git commit -a
+[master 21eecd7] Задание 13 - 14
+ 1 file changed, 23 insertions(+), 2 deletions(-)
+misha@vbox-altair:~/second_repo$ git push gh master
+Подсчет объектов: 3, готово.
+Delta compression using up to 2 threads.
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (3/3), 581 bytes | 0 bytes/s, готово.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To git@github.com:mixan96/central_repo.git
+   ddac55f..21eecd7  master -> master
 
 ==================== 15 ====================
 
