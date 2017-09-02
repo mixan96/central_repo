@@ -515,7 +515,41 @@ To git@github.com:mixan96/central_repo.git
 
 ==================== 16 ====================
 
+isha@vbox-altair:~/first_repo$ git checkout master
+Переключено на ветку «master»
+Ваша ветка отстает от «origin/master» на 4 коммита и может быть перемотана вперед.
+  (используйте «git pull», чтобы обновить вашу локальную ветку)
+  
+misha@vbox-altair:~/first_repo$ git pull origin master
+Из github.com:mixan96/central_repo
+ * branch            master     -> FETCH_HEAD
+Обновление ddac55f..edb8207
+Fast-forward
+ fileB          |  1 +
+ task1.1_answer | 53 ++++++++++++++++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 51 insertions(+), 3 deletions(-)
+ 
+misha@vbox-altair:~/first_repo$ git reset --hard bd435f12e3f1b6d5374289bd391a18672abf7979
 
+misha@vbox-altair:~/first_repo$ git fetch origin
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 4), reused 4 (delta 2), pack-reused 0
+Распаковка объектов: 100% (6/6), готово.
+Из github.com:mixan96/central_repo
+ * [новая ветка]     feature2   -> origin/feature2
+misha@vbox-altair:~/first_repo$ git branch -a
+  feature1
+* master
+  remotes/origin/feature1
+  remotes/origin/feature2
+  remotes/origin/master
+  
+misha@vbox-altair:~/first_repo$ git merge origin/feature2 
+Автослияние task1.1_answer
+Merge made by the 'recursive' strategy.
+ task1.1_answer | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
 
 ==================== 17 ====================
 
