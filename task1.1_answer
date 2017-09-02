@@ -281,7 +281,22 @@ Fast-forward
 
 ==================== 10 ====================
 
-
+misha@vbox-altair:~/first_repo$ git rev-list -n 1 HEAD -- fileB
+5b441ec46f93dadb8dd3043ba236fd792a57e561
+misha@vbox-altair:~/first_repo$ git checkout 5b441ec46f93dadb8dd3043ba236fd792a57e561^ -- fileB
+misha@vbox-altair:~/first_repo$ git add fileB
+misha@vbox-altair:~/first_repo$ git commit
+[master 719d842] 10. Восстановил fileB
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fileB
+misha@vbox-altair:~/first_repo$ git push origin master 
+Подсчет объектов: 3, готово.
+Delta compression using up to 2 threads.
+Сжатие объектов: 100% (2/2), готово.
+Запись объектов: 100% (3/3), 393 bytes | 0 bytes/s, готово.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:mixan96/central_repo.git
+   fff9bcd..719d842  master -> master
 
 ==================== 11 ====================
 
