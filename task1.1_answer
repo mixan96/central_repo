@@ -553,7 +553,122 @@ Merge made by the 'recursive' strategy.
 
 ==================== 17 ====================
 
+misha@vbox-altair:~/first_repo$ git log --graph
+* commit 7218a9da8aeb30cb89d1bb64380ca7ce6aa50465
+| Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| Date:   Sun Sep 3 00:51:11 2017 +0400
+| 
+|     Задание 16
+|    
+*   commit 40d8201635bdd3274816e712501193c187e55573
+|\  Merge: bd435f1 a360cfd
+| | Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| | Date:   Sun Sep 3 00:47:44 2017 +0400
+| | 
+| |     Merge remote-tracking branch 'origin/feature2'
+| |   
+| * commit a360cfd4eb5d223f08dd7d9d03ff57bc383731e4
+| | Author: Михаил Нуйкин <m.nuikin@reg.ru>
+| | Date:   Sun Sep 3 00:26:52 2017 +0400
+| | 
+| |     Дополнение к 15
+| |   
+| * commit 2cf9e54265c8ed23838ca52ae6bdfabbad72e3ce
+| | Author: Михаил Нуйкин <m.nuikin@reg.ru>
+| | Date:   Sun Sep 3 00:26:00 2017 +0400
+| | 
+| |     Задание 15
+| |   
+* | commit bd435f12e3f1b6d5374289bd391a18672abf7979
+| | Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| | Date:   Sun Sep 3 00:04:42 2017 +0400
+| | 
+| |     Дополнение для 12
+| |   
+* | commit d5160bbd174f93558be473c90c1557ef61edf278
+|/  Author: Нуйкин Михаил <m.nuikin@reg.ru>
+|   Date:   Sun Sep 3 00:03:45 2017 +0400
+|   
+|       Задание 12
+|  
+* commit ddac55fde58ebf3708fedcad327a180a4dea79da
+| Author: Михаил Нуйкин <m.nuikin@reg.ru>
+| Date:   Sun Sep 3 00:00:16 2017 +0400
+| 
+|     Задание 11
+|  
+* commit 9e5bf52d3c5b0e41b9cc9ca136b0ca9d6f175c2b
+| Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| Date:   Sat Sep 2 23:56:47 2017 +0400
+| 
+|     Задание 10
+|  
+* commit 719d842119f325210aa354c098fdb432ff541d3f
+| Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| Date:   Sat Sep 2 23:55:37 2017 +0400
+| 
+|     10. Восстановил fileB
+|  
+* commit fff9bcd1a9c97bb55fdf97c08f7e90dfee35426b
+| Author: Михаил Нуйкин <m.nuikin@reg.ru>
+| Date:   Sat Sep 2 23:52:50 2017 +0400
+| 
+|     Правки для 9
+|    
+*   commit 3800e417a082933845ba80d4ee5685791e1eaca5
+|\  Merge: 31f6da0 a2f2811
+| | Author: Михаил Нуйкин <m.nuikin@reg.ru>
+| | Date:   Sat Sep 2 23:50:16 2017 +0400
+| | 
+| |     Merge branch 'master' of github.com:mixan96/central_repo
+| |   
+| * commit a2f281163e35d8a98d3bcbf4ed44e137fef23ec5
+| | Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| | Date:   Sat Sep 2 23:33:45 2017 +0400
+| | 
+| |     Дополнение для задания 8
+| |   
+| * commit 5b441ec46f93dadb8dd3043ba236fd792a57e561
+| | Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| | Date:   Sat Sep 2 23:32:56 2017 +0400
+| | 
+| |     Задание 8
+| |   
+* | commit 31f6da0520be3103d46b326dd3ad8ad1ec768c46
+| | Author: Михаил Нуйкин <m.nuikin@reg.ru>
+| | Date:   Sat Sep 2 23:49:19 2017 +0400
+| | 
+| |     Логи для задания 9
+| |   
+* | commit a8fb8605e69ce48b1471adc7b64f914ef3b3e9cf
+|/  Author: Михаил Нуйкин <m.nuikin@reg.ru>
+|   Date:   Sat Sep 2 23:34:28 2017 +0400
+|   
+|       Задание 9
+|  
+* commit d619ddb2a40d21d746b68da56f250b487a9b9e7f
+| Author: Михаил Нуйкин <m.nuikin@reg.ru>
+| Date:   Sat Sep 2 23:29:15 2017 +0400
+| 
+|     Задание 7. Файлы fileA fileB
+|  
+* commit b168a8bb5484870d886a570c5f4f609940a77837
+| Author: Нуйкин Михаил <m.nuikin@reg.ru>
+| Date:   Sat Sep 2 23:24:57 2017 +0400
+| 
+|     Задание 5
+|  
+* commit 0e071ff782079783eeb78159b74d08b159ac3f04
+  Author: Нуйкин Михаил <m.nuikin@reg.ru>
+  Date:   Sat Sep 2 23:23:58 2017 +0400
+  
+      Задания 1-4
 
+misha@vbox-altair:~/first_repo$ git branch -D feature1 
+Ветка feature1 удалена (была bd435f1).
+misha@vbox-altair:~/first_repo$ git push origin :feature1
+To git@github.com:mixan96/central_repo.git
+ - [deleted]         feature1
 
 ==================== 18 ====================
 
